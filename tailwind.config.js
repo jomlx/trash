@@ -7,12 +7,18 @@ export default {
   ],
   theme: {
   	extend: {
+		fontFamily: {
+			sans: ['poppins', 'sans-serif'],
+		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		},
   		colors: {
+			'primary-color': '#4B9CD3',
+			'primary-shade': '#5da5d7',
+			'gray-shade': '#676a6d',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
