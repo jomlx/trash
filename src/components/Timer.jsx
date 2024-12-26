@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { Button } from "./ui/button";
+import { Alert, AlertDescription, AlertTitle } from "./ui/alert"
+import { AlarmClock } from 'lucide-react';
 
 function Timer() {
-    const [time, setTime] = useState(1500);
+    const [time, setTime] = useState(10);
     const [isRunning, setIsRunning] = useState(false);
     const [selectedTime, setSelectedTime] = useState('pomodoro');
     const [loopCount, setLoopCount] = useState(0);
@@ -49,7 +51,7 @@ function Timer() {
     const timeType = (phase) => {
         switch(phase) {
             case 'pomodoro':
-                setTime(1500);
+                setTime(10);
                 break;
             case 'shortBreak':
                 setTime(300);
