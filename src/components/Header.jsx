@@ -4,7 +4,7 @@ import { useState } from "react";
 function Header({setShowAuth}) {
 
     return (
-        <header className="w-full inline-flex justify-between pt-2 px-16 items-center">
+        <header className="w-full inline-flex justify-between pt-2 items-center">
             <span className="text-3xl font-bold">Learnt</span>
             <Button onClick= {() => setShowAuth(true)}>Login</Button>
         </header>

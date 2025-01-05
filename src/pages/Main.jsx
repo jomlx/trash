@@ -11,18 +11,18 @@ function Main() {
     return (
         <>
         {!showAuth ? (
-            <>
-            <Header setShowAuth={setShowAuth}/>
-            <div className='w-full justify-center mt-2 inline-flex gap-4'>
-                <div className='flex-col '>
-                    <Navbar/>
-                    <Timer/>
-                </div>
-                <div>
-                    <Library/>
+            <div className='w-full flex flex-col justify-center mt-2 px-20'>
+                <Header setShowAuth={setShowAuth}/>
+                <div className='w-full justify-center inline-flex gap-4'>
+                    <div className='flex-col '>
+                        <Navbar/>
+                        <Timer/>
+                    </div>
+                    <div>
+                        <Library/>
+                    </div>
                 </div>
             </div>
-            </>
         ) : (
             <Auth />
         )}
