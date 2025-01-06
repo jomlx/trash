@@ -4,6 +4,7 @@ import Timer from '../components/Timer'
 import Library from './Library';
 import Auth from './Auth';
 import { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route  } from "react-router-dom"
 
 function Main() {
     const [showAuth, setShowAuth] = useState(false);
@@ -19,7 +20,12 @@ function Main() {
                         <Timer/>
                     </div>
                     <div>
-                        <Library/>
+                        <Router>
+                            <Routes>
+                                <Route path="/" element={<Library/>}/>
+                                <Route path="/library" element={<Library/>}/>
+                            </Routes>
+                        </Router>
                     </div>
                 </div>
             </div>

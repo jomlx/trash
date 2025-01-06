@@ -5,7 +5,7 @@ function Navbar() {
         <div className="inline-flex w-full justify-evenly">
             <span>Library</span>
             <span>Reviewer</span>
-            <span>Ranking</span>
+            <span>Notes</span>
             <span>Settings</span>
         </div>
         </nav>
