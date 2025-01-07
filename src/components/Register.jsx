@@ -9,7 +9,7 @@ function Register() {
         <div className="w-[400px] h-full min-h-[360px] p-6 shadow-md">
             <div className="flex justify-between items-center">
               <h1 className="text-3xl font-bold">Register</h1>
-              <Link to='/'>
+              <Link to='/login'>
                 <p className="text-sm font-semibold underline text-gray-shade hover:text-black">Login</p>
               </Link>
             </div>
@@ -31,7 +31,9 @@ function Register() {
             </div>
 
             <div className="mt-10">
-              <Button className='w-full bg-primary-color hover:bg-primary-shade'>Register</Button>
+              <Link to='/'>
+                <Button className='w-full bg-primary-color hover:bg-primary-shade'>Register</Button>
+              </Link>
             </div>
         </div>
     </form>

@@ -32,7 +32,9 @@ function Login() {
             </div>
 
             <div className="mt-10">
-              <Button className='w-full bg-primary-color hover:bg-primary-shade'>Login</Button>
+              <Link to='/'>
+                <Button className='w-full bg-primary-color hover:bg-primary-shade'>Login</Button>
+              </Link>
             </div>
 
         </div>

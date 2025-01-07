@@ -1,12 +1,14 @@
 import { Button } from "./ui/button";
-import { useState } from "react";
+import { Link } from "react-router-dom";
 
-function Header({setShowAuth}) {
+function Header() {
 
     return (
         <header className="w-full inline-flex justify-between pt-2 items-center">
             <span className="text-3xl font-bold">Learnt</span>
-            <Button onClick= {() => setShowAuth(true)}>Login</Button>
+            <Link to='login'>
+                <Button>Login</Button>
+            </Link>
         </header>
     )
 }
